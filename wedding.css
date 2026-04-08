@@ -20,15 +20,36 @@ body {
 .wedding-header {
     text-align: center;
     padding: 40px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('20251116_1741391.jpg');
+    background-size: cover;
+    background-position: center 35%;
     color: white;
     margin: -20px -20px 40px -20px;
+    position: relative;
+}
+
+.wedding-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.wedding-header h1,
+.wedding-header .couple-names {
+    position: relative;
+    z-index: 2;
 }
 
 .wedding-header h1 {
     font-size: 3em;
     margin-bottom: 10px;
     font-weight: 300;
+    font-family: 'Dancing Script', cursive;
 }
 
 .couple-names h2 {
@@ -47,11 +68,11 @@ section {
     padding: 20px;
     background-color: #f8f5f0;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #87CEEB;
 }
 
 section h3 {
-    color: #667eea;
+    color: #87CEEB;
     font-size: 1.8em;
     margin-bottom: 15px;
     font-weight: 600;
@@ -71,7 +92,7 @@ strong {
     padding: 40px 20px;
     background-color: #f8f5f0;
     margin: 40px -20px -20px -20px;
-    border-top: 2px solid #667eea;
+    border-top: 2px solid #87CEEB;
 }
 
 .wedding-footer p {
@@ -108,7 +129,7 @@ strong {
 
 .rsvp-button {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -116,12 +137,12 @@ strong {
     font-size: 1.2em;
     font-weight: 600;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.3);
 }
 
 .rsvp-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 6px 20px rgba(135, 206, 235, 0.4);
 }
 
 /* RSVP Form Styles */
@@ -133,13 +154,13 @@ strong {
     background-color: #f8f5f0;
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #87CEEB;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .rsvp-form h3 {
-    color: #667eea;
+    color: #87CEEB;
     text-align: center;
     margin-bottom: 30px;
     font-size: 1.8em;
@@ -170,7 +191,7 @@ strong {
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #87CEEB;
 }
 
 .radio-group {
@@ -192,7 +213,7 @@ strong {
 }
 
 .submit-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
     color: white;
     padding: 15px 30px;
     border: none;
@@ -202,12 +223,12 @@ strong {
     cursor: pointer;
     width: 100%;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.3);
 }
 
 .submit-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 6px 20px rgba(135, 206, 235, 0.4);
 }
 
 .back-link {
@@ -216,7 +237,7 @@ strong {
 }
 
 .back-link a {
-    color: #667eea;
+    color: #87CEEB;
     text-decoration: none;
     font-weight: 600;
 }
